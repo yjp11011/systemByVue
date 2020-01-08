@@ -1,0 +1,82 @@
+@import "~iview/src/styles/index.less";
+@import url('./theme.less');
+.theme1 {
+  .theme(); //默认的样式
+}
+
+.theme2 {
+  .theme(rgb(141, 139, 219), #fff, #eee, rgb(130, 126, 240));
+}
+
+.theme3 {
+  .theme(rgb(172, 214, 200), #615f5f, #fff, rgb(91, 139, 123));
+}
+
+.theme4 {
+  .theme(#ffc527, #333, #fff, #ffc527);
+}
+
+.theme5 {
+  .theme(#999999, #333, #fff, #999999);
+}
+//@import "print.less";
+#app {
+  height: 100%;
+	.formitem {
+		margin: 10px 0;
+		margin-right: 0 !important;
+    .ivu-form-item-label{
+      font-size: 14px;
+			color: #666666
+    }
+	}
+  .query-btn {
+    display: inline-block;
+  }
+  .up-money{
+    color: @primary-color;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 32px
+  }
+  .ivu-btn-error{
+    border: 0
+  }
+}
+.self-madol {
+	.ivu-modal-header{
+		border: 0;
+		.ivu-modal-header-inner{
+			font-size:16px;
+			color: #333;
+		}
+	}
+  .ivu-modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .query-btn {
+    background: #fff8e9;
+    display: inline-block;
+  }
+	.formitem {
+		margin: 10px 0;
+		margin-right: 0 !important;
+		.ivu-form-item-label{
+			font-size: 14px;
+			color: #666666
+		}
+	}
+}
+.btn-modal{
+  .query-btn {
+    background: #fff8e9;
+    display: inline-block;
+  }
+}
+.details-madol {
+  .self-madol();
+}
+
+
+
